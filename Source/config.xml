@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0" rim:header="RIM-Widget:rim/widget">
+  <name>Groupon Deals on Map</name>
+  <description>Uses Sencha Touch, Google Maps API and Groupon API. Created using the BlackBerry WebWorks App Platform. Supported on BlackBerry 6 and PlayBook.</description>
+  <author rim:copyright="2010">n/a</author>
+  <rim:loadingScreen backgroundImage="background.png"
+                     foregroundImage="foreground.gif"
+                     onLocalPageLoad="true">
+        <rim:transitionEffect type="zoomIn"/>
+  </rim:loadingScreen>
+  <icon rim:hover="false" src="icon.png"/>
+  <icon rim:hover="true" src="icon.png"/>
+  <content src="index.html"/>
+<access uri="http://www.groupon.com" subdomains="true">
+   <feature id="blackberry.app.event" required="true" version="1.0.0"/>
+</access>
+<access uri="http://www.google.com" subdomains="true">
+<feature id="blackberry.app.event"/>
+<feature id="blackberry.invoke"/>
+</access>
+<access uri ="*"/>
+</widget>
